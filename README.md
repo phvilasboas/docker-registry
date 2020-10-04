@@ -2,8 +2,15 @@
 Docker Hub privado
 
 
-**Subir o container do registry.**
+**1 - Subir o container do registry.**
 
-docker-compose up -d
+_root@home:~# docker-compose up -d_
 
-**Fazer proxy no apache**
+**2 Fazer proxy no apache**
+copiar o arquivo registry-vhost.conf para o diretorio do apache.
+Ajustar o arquivo registry-vhost.conf conforme dominio
+
+_root@home:~# a2ensite registry-vhost.conf_
+
+**3 Fazer o restart do apache**
+
