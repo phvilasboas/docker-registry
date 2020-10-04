@@ -21,3 +21,6 @@ _root@server:~# a2ensite registry-vhost.conf_
 
 **3 - Fazer o restart do apache**
 
+Para ver as imagens disponiveis no repositório, use:
+
+http -a user https://repo.example.com.br/v2/_catalog
